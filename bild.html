@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive slider</h1>
+  <p>Ändrar storlek beroende på bredd av skärm.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://cdn.pixabay.com/photo/2020/01/15/17/38/fireworks-4768501_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2014/09/07/21/52/urban-438393_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2014/05/03/01/02/concert-336695_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/07/audience-828584_1280.jpg" style="width:100%">
+   </div>
+  
+  <div class="column">
+    <img src="https://cdn.pixabay.com/photo/2015/09/18/11/38/audience-945449_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2014/05/03/00/45/record-336626_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2016/03/28/09/36/music-1285165_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_1280.jpg" style="width:100%">
+    <img src="https://cdn.pixabay.com/photo/2014/11/22/10/21/mushroom-541576_1280.jpg" style="width:100%">
+  </div> 
+  </div>
+</body>
+</html>
